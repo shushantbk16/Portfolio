@@ -41,7 +41,6 @@
         <ul class="nav-links" id="navLinks">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#system">System</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact" class="nav-cta magnetic">Contact</a></li>
@@ -159,52 +158,10 @@
             </div>
         </section>
 
-        <!-- SYSTEM DIAGRAM -->
-        <section id="system" class="section">
-            <div class="wrap">
-                <p class="kicker mono reveal">03 / how I think</p>
-                <h2 class="title reveal">A reliable AI system, in one picture.</h2>
-                <p class="lede reveal">A generic reference architecture of the patterns I build. Click a node.</p>
-
-                <div class="diagram reveal">
-                    <svg viewBox="0 0 900 260" role="img" aria-label="Architecture: Client to API to Temporal workflow to LLM service and MCP tools to storage">
-                        <defs>
-                            <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#06b6d4" /><stop offset="1" stop-color="#8b5cf6" /></linearGradient>
-                        </defs>
-                        <g class="edges" fill="none" stroke="url(#g)" stroke-width="1.5" stroke-dasharray="4 6">
-                            <path id="e1" d="M120 130 H230" />
-                            <path id="e2" d="M350 130 H440" />
-                            <path id="e3" d="M560 130 C610 130 610 60 660 60" />
-                            <path id="e4" d="M560 130 C610 130 610 200 660 200" />
-                            <path id="e5" d="M780 60 C820 60 820 130 830 130" />
-                            <path id="e6" d="M780 200 C820 200 820 130 830 130" />
-                        </g>
-                        <g class="packets">
-                            <circle r="4" fill="#06b6d4"><animateMotion dur="1.6s" repeatCount="indefinite"><mpath href="#e1" /></animateMotion></circle>
-                            <circle r="4" fill="#3b82f6"><animateMotion dur="1.4s" begin=".4s" repeatCount="indefinite"><mpath href="#e2" /></animateMotion></circle>
-                            <circle r="4" fill="#8b5cf6"><animateMotion dur="1.5s" begin=".8s" repeatCount="indefinite"><mpath href="#e3" /></animateMotion></circle>
-                            <circle r="4" fill="#8b5cf6"><animateMotion dur="1.7s" begin="1s" repeatCount="indefinite"><mpath href="#e4" /></animateMotion></circle>
-                            <circle r="4" fill="#06b6d4"><animateMotion dur="1.3s" begin="1.4s" repeatCount="indefinite"><mpath href="#e5" /></animateMotion></circle>
-                            <circle r="4" fill="#3b82f6"><animateMotion dur="1.3s" begin="1.8s" repeatCount="indefinite"><mpath href="#e6" /></animateMotion></circle>
-                        </g>
-                        <g class="nodes">
-                            <g class="node" tabindex="0" role="button" data-k="client" transform="translate(20,100)"><rect width="100" height="60" rx="12" /><text x="50" y="35" text-anchor="middle">Client</text></g>
-                            <g class="node" tabindex="0" role="button" data-k="api" transform="translate(230,100)"><rect width="120" height="60" rx="12" /><text x="60" y="35" text-anchor="middle">API gateway</text></g>
-                            <g class="node hot" tabindex="0" role="button" data-k="workflow" transform="translate(440,100)"><rect width="120" height="60" rx="12" /><text x="60" y="35" text-anchor="middle">Temporal</text></g>
-                            <g class="node" tabindex="0" role="button" data-k="llm" transform="translate(660,30)"><rect width="120" height="60" rx="12" /><text x="60" y="35" text-anchor="middle">LLM service</text></g>
-                            <g class="node" tabindex="0" role="button" data-k="mcp" transform="translate(660,170)"><rect width="120" height="60" rx="12" /><text x="60" y="35" text-anchor="middle">MCP tools</text></g>
-                            <g class="node" tabindex="0" role="button" data-k="store" transform="translate(830,100)"><rect width="60" height="60" rx="12" /><text x="30" y="35" text-anchor="middle">DB</text></g>
-                        </g>
-                    </svg>
-                    <p class="diagram-note mono" id="diagramNote" aria-live="polite">Pick a node to see the idea behind it.</p>
-                </div>
-            </div>
-        </section>
-
         <!-- SKILLS -->
         <section id="skills" class="section">
             <div class="wrap">
-                <p class="kicker mono reveal">04 / skills</p>
+                <p class="kicker mono reveal">03 / skills</p>
                 <h2 class="title reveal">The toolbox.</h2>
                 <div class="skills-grid">
                     <div class="card tilt reveal"><h3>Languages</h3><p class="chips"><span data-g="py">Python</span><span>SQL</span><span>JavaScript</span></p></div>
@@ -220,7 +177,7 @@
         <!-- PROJECTS -->
         <section id="projects" class="section">
             <div class="wrap">
-                <p class="kicker mono reveal">05 / projects</p>
+                <p class="kicker mono reveal">04 / projects</p>
                 <h2 class="title reveal">Things I've built in public.</h2>
 
                 <div class="projects">
@@ -262,21 +219,6 @@
                     </a>
                 </div>
 
-                <h3 class="subtitle reveal">More from the lab</h3>
-                <ul class="more reveal">
-                    <li><a href="https://github.com/shushantbk16/Adaptive-RAG-Assessment-Engine" target="_blank" rel="noopener">Adaptive RAG Assessment Engine</a></li>
-                    <li><a href="https://github.com/shushantbk16/RAG-MLOPS-LANGCHAIN" target="_blank" rel="noopener">RAG + MLOps with LangChain</a></li>
-                    <li><a href="https://github.com/shushantbk16/RAG-Deepdive" target="_blank" rel="noopener">RAG Deep-dive</a></li>
-                    <li><a href="https://github.com/shushantbk16/Distributed-Multi-Model-Inference-Verification-Gateway" target="_blank" rel="noopener">Multi-Model Inference Verification Gateway</a></li>
-                    <li><a href="https://github.com/shushantbk16/Forin-hr-assistant" target="_blank" rel="noopener">HR Assistant</a></li>
-                    <li><a href="https://github.com/shushantbk16/Promotheus-Grafana" target="_blank" rel="noopener">Prometheus &amp; Grafana monitoring</a></li>
-                    <li><a href="https://github.com/shushantbk16/Kubernetes_practice" target="_blank" rel="noopener">Kubernetes practice</a></li>
-                    <li><a href="https://github.com/shushantbk16/Dynamic_Anomaly_Detection_and_Recommender_system_for_smart_supply_chain_management" target="_blank" rel="noopener">Anomaly detection &amp; recommender for supply chain</a></li>
-                    <li><a href="https://github.com/shushantbk16/Vehicle_insurance" target="_blank" rel="noopener">Vehicle insurance ML pipeline</a></li>
-                    <li><a href="https://github.com/shushantbk16/nft-market-place" target="_blank" rel="noopener">NFT marketplace</a></li>
-                    <li><a href="https://github.com/shushantbk16/E-commerce" target="_blank" rel="noopener">E-commerce store</a></li>
-                    <li><a href="https://github.com/shushantbk16/Promptopia" target="_blank" rel="noopener">Promptopia (Next.js)</a></li>
-                </ul>
                 <p class="note reveal">Most of my current work is in private repositories, so I describe it at a high level above. <a href="https://github.com/shushantbk16" target="_blank" rel="noopener">All public repos on GitHub &rarr;</a></p>
             </div>
         </section>
@@ -284,7 +226,7 @@
 
     <footer id="contact" class="footer">
         <div class="wrap">
-            <p class="kicker mono">06 / contact</p>
+            <p class="kicker mono">05 / contact</p>
             <h2 class="cta">Let's build something <em>reliable</em>.</h2>
             <div class="hero-actions">
                 <button class="btn primary magnetic" id="copyMail" type="button" data-mail="shushantkamatar11@gmail.com">Copy email</button>

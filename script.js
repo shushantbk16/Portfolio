@@ -136,7 +136,7 @@
             ring.style.transform = `translate(${rx}px,${ry}px)`;
             requestAnimationFrame(loop);
         })();
-        document.addEventListener('mouseover', e => ring.classList.toggle('big', !!e.target.closest('a, button, .tilt, .node')));
+        document.addEventListener('mouseover', e => ring.classList.toggle('big', !!e.target.closest('a, button, .tilt')));
     }
 
     /* ---------- Magnetic buttons ---------- */
@@ -167,22 +167,6 @@
         const g = ch.dataset.g;
         ch.addEventListener('mouseenter', () => $$(`.chips span[data-g="${g}"]`).forEach(s => s.classList.add('hl')));
         ch.addEventListener('mouseleave', () => $$('.chips span.hl').forEach(s => s.classList.remove('hl')));
-    });
-
-    /* ---------- Diagram ---------- */
-    const notes = {
-        client: 'Clients never wait on the model. Requests are accepted fast and tracked by an id.',
-        api: 'Fail-closed auth, signed callbacks and download limits live at the edge, so a missing secret means a refusal, not an open door.',
-        workflow: 'Long-running work runs as durable workflows. Retries are idempotent, failure detection is bounded, and a restart resumes where it stopped.',
-        llm: 'Model calls are treated as unreliable. An outage is reported as an outage, retried, and never silently turned into bad data.',
-        mcp: 'Tools sit behind MCP servers: incremental sync for document libraries, handover tools for support systems.',
-        store: 'State is written once and checked at commit, so a re-run supersedes cleanly instead of duplicating.'
-    };
-    const note = $('#diagramNote');
-    $$('.node').forEach(n => {
-        const pick = () => { $$('.node').forEach(x => x.classList.remove('sel')); n.classList.add('sel'); note.textContent = notes[n.dataset.k]; };
-        n.addEventListener('click', pick);
-        n.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(); } });
     });
 
     /* ---------- Copy email + sparks ---------- */
