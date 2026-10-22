@@ -43,7 +43,7 @@
                 <h1 class="fade-in delay-1">AI Engineer</h1>
                 <h2 class="fade-in delay-2">Generative AI & MLOps Specialist</h2>
                 <p class="hero-description fade-in delay-3">
-                    AI Engineer @ Magure | Ex-Lenovo | Distributed Inference & Generative AI
+                    AI Engineer @ Magure | Ex-Lenovo | Production LLM Agents, MCP & Workflow Orchestration
                 </p>
                 <div class="hero-actions fade-in delay-4">
                     <a href="mailto:shushantkamatar11@gmail.com" class="btn-primary">Email Me</a>
@@ -78,9 +78,12 @@ I specialize in scalable inference engines (<strong>vLLM</strong>), memory optim
                             <span class="company">Magure</span>
                             <span class="date">April 2026 - Present</span>
                             <ul>
-                                <li>Architecting and deploying high-throughput LLM inference systems using <strong>vLLM</strong>, optimizing for continuous batching and PagedAttention to maximize GPU cluster utilization.</li>
-    <li>Developing an elite structured data extraction pipeline utilizing Pydantic and Guided Decoding to ensure 100% deterministic JSON outputs at scale.</li>
-    <li>Implementing model quantization techniques (4-bit/8-bit AWQ) to significantly reduce VRAM overhead while maintaining high extraction accuracy across distributed nodes.</li>
+                                <li>Delivered 76 PRs (~375 commits) across 9 production services in six months, spanning agent-platform tooling and a regulated financial-services document-intelligence system.</li>
+                                <li>Built <strong>MCP</strong> tool servers connecting agents to enterprise document libraries and customer-support systems, with incremental delta sync, human-handover tools and multi-turn session continuity.</li>
+                                <li>Re-architected long-running document-case processing as durable <strong>Temporal</strong> workflows with idempotent retries, bounded failure detection and safe re-runs.</li>
+                                <li>Improved reliability: correct model-outage reporting, retries across service restarts, isolation of failed async documents, and fixes from load-test findings.</li>
+                                <li>Hardened services for production: fail-closed auth, signed callbacks, download limits and read-only Kubernetes root filesystems.</li>
+                                <li>Authored architecture decision records; served models with <strong>vLLM</strong> and built <strong>DSPy</strong>-based extraction pipelines.</li>
                             </ul>
                         </div>
                     </div>
@@ -142,6 +145,9 @@ I specialize in scalable inference engines (<strong>vLLM</strong>), memory optim
                             <span class="skill-tag">vLLM</span>
                             <span class="skill-tag">PagedAttention</span>
                             <span class="skill-tag">Vector Embeddings</span>
+                            <span class="skill-tag">DSPy</span>
+                            <span class="skill-tag">MCP (Model Context Protocol)</span>
+                            <span class="skill-tag">Structured Extraction</span>
                             
                         </div>
                     </div>
@@ -167,6 +173,8 @@ I specialize in scalable inference engines (<strong>vLLM</strong>), memory optim
                             <span class="skill-tag">DVC</span>
                             <span class="skill-tag">Prometheus</span>
                             <span class="skill-tag">Grafana</span>
+                            <span class="skill-tag">GitOps Deploys</span>
+                            <span class="skill-tag">Container Hardening</span>
                         </div>
                     </div>
                     <div class="skill-category fade-up delay-5">
@@ -177,6 +185,9 @@ I specialize in scalable inference engines (<strong>vLLM</strong>), memory optim
                             <span class="skill-tag">AsyncIO</span>
                             <span class="skill-tag">Redis</span>
                             <span class="skill-tag">WebSockets</span>
+                            <span class="skill-tag">Temporal (Workflow Orchestration)</span>
+                            <span class="skill-tag">Idempotent Retries</span>
+                            <span class="skill-tag">Architecture Decision Records</span>
                         </div>
                     </div>
                 </div>
@@ -188,33 +199,33 @@ I specialize in scalable inference engines (<strong>vLLM</strong>), memory optim
                 <h2 class="section-title fade-up">Projects</h2>
                 <div class="projects-grid">
                     <!-- Project 1 -->
-                    <a href="#" class="project-card fade-up delay-1">
+                    <a href="https://github.com/shushantbk16/Text-to-SQL-Assistant" target="_blank" rel="noopener" class="project-card fade-up delay-1">
                         <div class="project-header">
                             <span class="folder-icon">📁</span>
                             <span class="external-icon">↗</span>
                         </div>
                         <h3>Text-to-SQL Engine</h3>
-                        <p>Autonomous engine converting natural language to complex SQL queries.</p>
+                        <p>Self-healing NL-to-SQL engine with autonomous error correction, Redis caching (&lt;5ms) and Dockerized microservices.</p>
                         <div class="project-tech">
                             <span>Python</span>
                             <span>LLMs</span>
                         </div>
                     </a>
                     <!-- Project 2 -->
-                    <a href="#" class="project-card fade-up delay-2">
+                    <a href="https://github.com/shushantbk16/Distributed-inference-gateway" target="_blank" rel="noopener" class="project-card fade-up delay-2">
                         <div class="project-header">
                             <span class="folder-icon">📁</span>
                             <span class="external-icon">↗</span>
                         </div>
                         <h3>Distributed Inference Gateway</h3>
-                        <p>Scalable gateway for routing inference requests across multiple models.</p>
+                        <p>Async API gateway load-balancing inference requests across worker nodes, built for throughput and fault tolerance.</p>
                         <div class="project-tech">
                             <span>FastAPI</span>
                             <span>Redis</span>
                         </div>
                     </a>
                     <!-- Project 3 -->
-                    <a href="#" class="project-card fade-up delay-3">
+                    <a href="https://github.com/shushantbk16/Master-RAG" target="_blank" rel="noopener" class="project-card fade-up delay-3">
                         <div class="project-header">
                             <span class="folder-icon">📁</span>
                             <span class="external-icon">↗</span>
@@ -227,42 +238,42 @@ I specialize in scalable inference engines (<strong>vLLM</strong>), memory optim
                         </div>
                     </a>
                     <!-- Project 4 -->
-                    <a href="#" class="project-card fade-up delay-4">
+                    <a href="https://github.com/shushantbk16/End-to-End-ML-Pipeline-Dvc-AWSs3" target="_blank" rel="noopener" class="project-card fade-up delay-4">
                         <div class="project-header">
                             <span class="folder-icon">📁</span>
                             <span class="external-icon">↗</span>
                         </div>
                         <h3>Production MLOps Pipeline</h3>
-                        <p>End-to-end pipeline for model training, evaluation, and deployment.</p>
+                        <p>Automated ML lifecycle with DVC data versioning, AWS S3 storage and GitHub Actions CI/CD.</p>
                         <div class="project-tech">
                             <span>Docker</span>
                             <span>MLflow</span>
                         </div>
                     </a>
                     <!-- Project 5 -->
-                    <a href="#" class="project-card fade-up delay-5">
+                    <a href="https://github.com/shushantbk16/TEXT-TO-SQL-REDIS-CAHCED" target="_blank" rel="noopener" class="project-card fade-up delay-5">
                         <div class="project-header">
                             <span class="folder-icon">📁</span>
                             <span class="external-icon">↗</span>
                         </div>
-                        <h3>Redis Caching Layer</h3>
-                        <p>High-performance caching layer for optimizing API response times.</p>
+                        <h3>Redis-Cached Text-to-SQL</h3>
+                        <p>Text-to-SQL service with a Redis caching layer to cut API response times.</p>
                         <div class="project-tech">
                             <span>Redis</span>
                             <span>AsyncIO</span>
                         </div>
                     </a>
                     <!-- Project 6 -->
-                    <a href="#" class="project-card fade-up delay-6">
+                    <a href="https://github.com/shushantbk16/ProductPulse-End-to-End-AI-Feedback-Analysis-Platform" target="_blank" rel="noopener" class="project-card fade-up delay-6">
                         <div class="project-header">
                             <span class="folder-icon">📁</span>
                             <span class="external-icon">↗</span>
                         </div>
-                        <h3>Agentic Workflow Orchestrator</h3>
-                        <p>System for managing and executing complex multi-agent workflows.</p>
+                        <h3>ProductPulse</h3>
+                        <p>Real-time product-sentiment platform: transformer NLP, automated ingestion and live dashboards.</p>
                         <div class="project-tech">
                             <span>Python</span>
-                            <span>Agents</span>
+                            <span>NLP</span>
                         </div>
                     </a>
                 </div>
@@ -274,7 +285,7 @@ I specialize in scalable inference engines (<strong>vLLM</strong>), memory optim
         <div class="container footer-content">
             <div class="footer-left">
                 <h3>Shushant Kamatar</h3>
-                <p>Bridging Research AI & Production Engineering</p>
+                <p>Production AI, built to survive production</p>
             </div>
             <div class="footer-right">
                 <a href="mailto:shushantkamatar11@gmail.com">Email</a>
@@ -283,7 +294,7 @@ I specialize in scalable inference engines (<strong>vLLM</strong>), memory optim
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Shushant Kamatar. All rights reserved.</p>
+            <p>&copy; 2026 Shushant Kamatar. All rights reserved.</p>
         </div>
     </footer>
 
